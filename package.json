@@ -1,0 +1,24 @@
+{
+  "name": "testgen",
+  "version": "1.0.0",
+  "description": "Parse typescript files",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack --debug --mode development",
+    "build:prod": "webpack -p --mode production",
+    "start": "webpack --mode development && node --inspect build/index.js",
+    "startxxx": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "@types/node": "^14.0.27"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "path": "^0.12.7",
+    "tslib": "^2.0.0"
+  }
+}
